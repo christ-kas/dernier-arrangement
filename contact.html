@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scalesgt=1.0">
+        <title>SITE WEB</title>
+        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+        <div class="liens">
+            <a href="accueil.html">accueil</a>
+            <a href="">produit</a>
+            <a href="aide.html">aide</a>
+       </div>
+       <div class="contact">
+          <h2>Contactez-nous</h2>
+          <p>Quel article recherchez-vous?</p>
+          <form id="contactForm">
+              <textarea name="message" placeholder="Détaillez le produit recherché (type, marque, couleur, taille...)" rows="4" required></textarea>
+              <input type="email" name="email" placeholder="Email" required>
+              <input type="tel" name="telephone" placeholder="Téléphone" required>
+              <button type="submit">Envoyer la demande</button>
+          </form>
+        </div>
+    </body>
+</html>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var message = document.querySelector('textarea[name="message"]').value;
+    var email = document.querySelector('input[name="email"]').value;
+    var telephone = document.querySelector('input[name="telephone"]').value;
+    var numero = "+243999955270"; 
+    var texte = encodeURIComponent(
+        "Demande de produit :\n" +
+        message + "\n\n" +
+        "Email : " + email + "\n" +
+        "Téléphone : " + telephone
+    );
+    var url = "https://wa.me/" +243999955270 + "?text=" + texte;
+    window.open(url, '_blank');
+});
+</script>
+ <footer>
+     <div class="footer-content">
+       <div class="footer-section">
+         <p>&copy; 2025 KACH. Tous droits réservés.</p>
+         <div class="footer-links">
+           <a href="accueil.html">Accueil</a> |
+           <a href="aide.html">Aide</a> |
+           <a href="contact.html">Contact</a>|
+         </div>
+       </div>
+       <div class="footer-section">
+          <h4>Suivez-nous</h4>
+          <a href="https://www.tiktok.com/@christ_kas273?_t=ZM-BuxOuG3b2E&"class="social-icon" target="_blank"><i class="fab fa-tiktok"></i>tiktok</a>
+          <a href="https://wa.me/+243999955270"class="social-icon" target="_blank"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+          <a href="https://www.instagram.com/Christ_Kas_273?igsh=MzR1ODBiNWF1ZA== "class="social-icon"target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+          <a href="https://www.facebook.com/Share/&1BncgMHJgQ/?mibextid==wwXIFR"class="social-icon"target=_blank><i class="fab fa-facebook-f"></i>Facebook</a>
+       </div>
+       <div class="footer-section">
+         <h4>Contactez-nous</h4>
+         <p>Email : <a href="mailto:tonemail@email.com">christkasongo8@gmail.com</a></p>
+         <p>Téléphone : +243 999 955 270</p>
+       </div>
+     </div>
+   </footer>

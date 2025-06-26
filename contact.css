@@ -1,0 +1,145 @@
+body{
+    background: url(IMG_1295[1].JPG) no-repeat center center fixed;
+    background-size: cover;
+    font-family: arial, sans-serif;
+    color: white;
+    display: flex;
+    margin: 110px;
+    align-items: center;
+    flex-direction: column;
+}
+.liens{
+    gap: 20px;
+    color: white;
+    font-size: 30px;
+    display: flex ;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+}
+a:hover{
+    color: #ff7e5f;
+}
+.contact{
+    background: black;
+    padding: 20px ;
+    border-radius:  10px;
+    text-align: center;
+    width: 400px;
+    margin-top: 10px;
+    text-align: center;
+    align-items: center;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px -10px;
+    border-radius: 10px;
+}
+button{
+
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor:pointer
+}
+textarea{
+    padding: 10px;
+    resize: none;
+}
+.footer {
+  background: white;
+  color: #fff;
+  width: 100%;
+}
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  margin: 10px ;
+  min-width: 10px;
+}
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 10px ;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.social-icon {
+  font-size: 20px;
+  margin: 0 8px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.social-icon:hover {
+  color: #fff;
+}
+.footer-section h4 {
+  margin-bottom: 8px;
+  color:white;
+}
+.footer-section a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.footer-section a:hover {
+  text-decoration: none;
+  color: #ff7e5f;
+}
+.footer-section p {
+  color: white;
+  font-size: 20;
+}
+.footer-section p:hover {
+  color: #ff7e5f;
+}
+h4:hover {
+  color: #ff7e5f;
+}
+@media (max-width: 900px) {
+  body {
+    margin: 20px;
+    padding: 10px;
+  }
+  .contact {
+    width: 90vw;
+    min-width: 0;
+    padding: 10px;
+  }
+  .liens {
+    font-size: 22px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    display: inline;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+    .footer-section {
+        min-width: unset;
+        margin: 10px 0;
+    }
+    .footer-content a{
+        padding: 0 5px;
+        display: inline;
+    }
+}
