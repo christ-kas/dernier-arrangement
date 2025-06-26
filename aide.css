@@ -7,6 +7,10 @@ body{
     flex-direction: column;
     text-align: center;
 }
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
 main, a{
     text-decoration: none;
     color: white;
@@ -50,31 +54,17 @@ a:hover{
   width: 100%;
 }
 .footer-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.footer-section {
-  margin: 10px ;
-  min-width: 10px;
+  text-align: center;
 }
 .footer-links a {
-  color: white
+  color: white;
   text-decoration: none;
-  margin: 10px ;
 }
-
 .footer-links a:hover {
   text-decoration: underline;
 }
-
 .social-icon {
   font-size: 20px;
-  margin: 0 8px;
   text-decoration: none;
   transition: color 0.2s;
 }
@@ -82,8 +72,8 @@ a:hover{
   color: #fff;
 }
 .footer-section h4 {
-  margin-bottom: 8px;
   color:white;
+  font-size: 20px;
 }
 .footer-section a {
   color: white;
@@ -96,7 +86,7 @@ a:hover{
 }
 .footer-section p {
   color: white;
-  font-size: 20;
+  font-size: 20px;
 }
 .footer-section p:hover {
   color: #ff7e5f;
@@ -104,6 +94,7 @@ a:hover{
 h4:hover {
   color: #ff7e5f;
 }
+
 @media (max-width: 900px) {
     body {
         margin: 10px;

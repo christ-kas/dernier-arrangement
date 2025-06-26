@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
-<html>
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scalesgt=1.0">
     <title>SITE WEB</title>
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  </head>
-  <body>
+</head>
+<body>
     <div class="liens">
       <a href="accueil.html">accueil</a>
-      <a href="">produit</a>
+      <a href="produit.html">produit</a>
       <a href="aide.html">aide</a>
     </div>
     <div class="contact">
@@ -24,7 +23,7 @@
         <button type="submit">Envoyer la demande</button>
       </form>
     </div>
-    <footer>
+   <footer>
       <div class="footer-content">
        <div class="footer-section">
           <h4>Suivez-nous</h4>
@@ -47,8 +46,8 @@
          </div>
        </div>
      </div>
-    </footer>
-    <script>
+   </footer>
+   <script>
       document.getElementById('contactForm').addEventListener('submit', function(e) {
       e.preventDefault();
       var message = document.querySelector('textarea[name="message"]').value;
@@ -61,11 +60,11 @@
         "Email : " + email + "\n" +
         "Téléphone : " + telephone
      );
-    var url = "https://wa.me/" +243999955270 + "?text=" + texte;
-    window.open(url, '_blank');
-    });
-  </script>
-  </body>
+     var url = "https://wa.me/" +243999955270 + "?text=" + texte;
+      window.open(url, '_blank');
+     });
+   </script>
+</body>
 </html>
 
 
