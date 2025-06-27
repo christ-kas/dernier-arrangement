@@ -12,11 +12,12 @@ body{
     align-items: center;
 }
 .tete h1{
-    color: #ff7e5f;
+    color: white;
     font-size: 30px;
+    font-family: arial;
 }
 .tete img{
-    border-radius: 30%;
+    border-radius: 0px;
 }
 .description{
     text-align: center;
@@ -25,9 +26,9 @@ body{
     margin-top: 20px;
 }
 .commentaire {
-    border: 1px solid #ff7e5f;
-    border-radius: 25px;
-    padding: 0px;
+    border: 0px solid #ff7e5f;
+    border-radius: 0px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +37,7 @@ body{
     background: #ff7e5f;;
 }
 .commentaire img {
-    border-radius: 10%;
+    border-radius: 0%;
     object-fit: cover;
     flex-wrap: wrap;
 }
@@ -51,7 +52,7 @@ body{
     flex-wrap: wrap;     /* pour passer à la ligne sur petit écran */
 }
 .description p {
-    font-size: 18px;
+    font-size: 30px;
     color: white;
 }
 .prix {font-size: 22px;
