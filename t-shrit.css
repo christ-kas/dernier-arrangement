@@ -1,0 +1,74 @@
+body{
+    padding: 60px;
+    margin: 0px;
+    font-family: Arial,serif;
+    background: url('IMG_1295[1].JPG') no-repeat center center fixed;
+    background-size: cover;
+}
+.tete{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.tete h1{
+    color: #ff7e5f;
+    font-size: 30px;
+}
+.tete img{
+    border-radius: 30%;
+}
+.description{
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+    margin-top: 20px;
+}
+.commentaire {
+    border: 1px solid #ff7e5f;
+    border-radius: 25px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 247px;
+    margin: 20px auto;
+    background: #ff7e5f;;
+}
+.commentaire img {
+    border-radius: 10%;
+    object-fit: cover;
+    flex-wrap: wrap;
+}
+.commentaire img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.tout{
+    display: flex;
+    gap: 30px;           /* espace entre les produits */
+    justify-content: center;
+    flex-wrap: wrap;     /* pour passer à la ligne sur petit écran */
+}
+.description p {
+    font-size: 18px;
+    color: white;
+}
+.prix {font-size: 22px;
+    color: white;
+}
+.acheter {
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 18px;
+}
+.acheter a {
+    text-decoration: none;
+    color: black;
+}
+.acheter:hover {
+    background: #fd4444;
+}
