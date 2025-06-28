@@ -114,7 +114,6 @@ footer {
         padding: 18px 6vw 16px 6vw;
     }
     .footer-content {
-        flex-direction: column;
         gap: 18px;
         padding: 0 18px;
     }

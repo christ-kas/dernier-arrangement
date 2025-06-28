@@ -82,6 +82,10 @@ body {
   .liens {
     font-size: 0.98em;
   }
+  footer{
+    text-align: center;
+    padding: 0 18px;
+  }
 }
 footer {
     backdrop-filter: blur(80px);
