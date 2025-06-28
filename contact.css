@@ -1,50 +1,123 @@
-body{
-  background: url(IMG_1295[1].JPG) no-repeat center center fixed;
+/* Style général */
+body {
+  font-family: Arial, sans-serif;
+  background:url(IMG_1295[1].JPG) no-repeat center center fixed;
     background-size: cover;
-    padding: 0;
-    margin: 0;
+  margin: 0;
+  padding: 0;
+  color:white;
+}
 
+/* Liens de navigation */
+.liens {
+  backdrop-filter: blur(80px);
+  padding: 15px 0;
+  text-align: center;
 }
-.liens{
-    gap: 20px;
+.liens a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 18px;
+  font-weight: 500;
+  font-size: 1.1em;
+  transition: color 0.2s;
+}
+.liens a:hover {
+  color:brown;
+}
+
+/* Bloc contact */
+.contact {
+  background: black;
+  max-width: 420px;
+  margin: 40px auto 0 auto;
+  padding: 32px 28px 24px 28px;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+.contact h2 {
+  margin-top: 0;
+  color:#fff;
+  font-size: 2em;
+  margin-bottom: 8px;
+}
+.contact p {
+  color:#fff;
+  margin-bottom: 18px;
+}
+
+/* Formulaire */
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#contactForm textarea,
+#contactForm input[type="email"],
+#contactForm input[type="tel"] {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  font-size: 15px;
+}
+#contactForm button {
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 13px 0;
+  border-radius: 7px;
+  font-size: 1.1em;
+  margin-top: 8px;
+}
+#contactForm button:hover {
+  background: #ff7e5f;;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact {
+    max-width: 98vw;
+    padding: 18px 6vw 16px 6vw;
+  }
+  .liens {
+    font-size: 0.98em;
+  }
+}
+footer {
+    backdrop-filter: blur(80px);
+    color: #fff;
+    padding: 32px 0 18px 0;
+    margin-top: 40px;
+}
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: space-between;
+}
+.footer-section {
+    flex: 1 1 220px;
+    min-width: 220px;
+}
+.footer-section h4 {
     color: white;
-    font-size: 30px;
-    display: flex ;
-    justify-self:center;
+    margin-bottom: 12px;
 }
-a{
+.footer-section a, .footer-links a {
+    color: #fff;
     text-decoration: none;
-    color: white;
-    padding-left: 20px;
+    margin-right: 10px;
+    transition: color 0.2s;
 }
-a:hover{
-    color: #ff7e5f;
+.footer-section a:hover, .footer-links a:hover {
+    color: #ff9800;
 }
-.contact{
-    background: black;
-    padding: 20px ;
-    border-radius:  10px;
-    text-align: center;
-    width: 400px;
+.footer-links {
     margin-top: 10px;
-    margin: auto;
-    margin-top: 20px;
+    font-size: 1em;
 }
-input, textarea{
-    width: 100%;
-    padding: 10px;
-    margin: 10px -10px;
-    border-radius: 10px;
-}
-button{
-
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
-    cursor:pointer
-}
-textarea{
-    padding: 10px;
-    resize: none;
+.footer-section p:hover {
+    color:#ff9800
 }

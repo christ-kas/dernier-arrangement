@@ -1,170 +1,121 @@
-*{
+body {
+    font-family: Arial, sans-serif;
+    background:url(IMG_1295[1].JPG) no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
-    padding: 0px;
-    box-sizing: border-box;
+    color: #222;
 }
-body{
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
-    font-family: 50px;
-    justify-content: center;
-    flex-direction: column;
+.navbar {
+    backdrop-filter: blur(80px);
+    padding: 16px 0;
+    text-align: center;
 }
-main, a{
+.navbar a {
+    color: #fff;
     text-decoration: none;
-    color: white;
-    font-size: 30px;
+    margin: 0 22px;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: color 0.2s;
 }
-main{
-    padding: 10px;
-    display: flex;
+.navbar a:hover {
+    color: brown;
 }
-a{
-    padding: 10px;
+main {
+    max-width: 700px;
+    margin: 40px auto 0 auto;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 28px 24px 28px;
 }
-header{
-    text-align: center; 
-    border: white;
-    padding: 200px;
-    margin: 100px;
-    border: 5px solid;
-}
-header,p,h2,li{
-    color: white;
-    font-size: 20px;
 
-}
-.ul, ol{
+.aide-header {
     text-align: center;
-    align-items: center;
-    list-style-position: inside;
-    display: inline-block;
-    color: white;
+    margin-bottom: 24px;
 }
-.ul, li{
-    list-style-position: inside;
-    text-align: center;
-    align-items: center;
-    display: felx;
-    color: white;
+.aide-header h1 {
+    color: #ff9800;
+    font-size: 2.5em;
+    margin: 0;
 }
-P,h2,h1{
-    color: white;
+.faq, .guide, .retour, .livraison, .contact-aide {
+    margin-bottom: 28px;
 }
-a:hover{
-    color: rgb(248, 61, 14)
+.faq h2, .guide h2, .retour h2, .livraison h2, .contact-aide h2 {
+    color: #ff9800;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+.faq ul, .guide ul {
+    padding-left: 22px;
+}
+.faq li, .guide li {
+    margin-bottom: 8px;
+}
+.pay {
+    color: #009688;
+    font-weight: bold;
+}
+.note {
+    color: #e53935;
+    font-size: 0.98em;
+}
+.whatsapp-link {
+    color: #25d366;
+    text-decoration: none;
+    font-weight: bold;
+}
+.whatsapp-link:hover {
+    text-decoration: underline;
+}
+footer {
+    backdrop-filter: blur(80px);
+    color: #fff;
+    padding: 32px 0 18px 0;
+    margin-top: 40px;
 }
 .footer-content {
-  text-align: center;
-  backdrop-filter: blur(80px);
-  width: 100%;
-  margin-top: 20px;
-  padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: space-between;
 }
-
 .footer-section {
-  margin: 10px 20px;
-  min-width: 200px;
-}
-
-.footer-links a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
-
-.social-icon {
-  font-size: 20px;
-  margin: 0 8px;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-.social-icon:hover {
-  color: #fff;
+    flex: 1 1 220px;
+    min-width: 220px;
 }
 .footer-section h4 {
-  margin-bottom: 8px;
-  color:white;
-  font-size: 20px;
+    color: white;
+    margin-bottom: 12px;
 }
-.footer-section a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
+.footer-section a, .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: color 0.2s;
 }
-.footer-section a:hover {
-  text-decoration: none;
-  color: #ff7e5f;
+.footer-section a:hover, .footer-links a:hover {
+    color: #ff9800;
 }
-.footer-section p {
-  color: white;
+.footer-links {
+    margin-top: 10px;
+    font-size: 1em;
 }
 .footer-section p:hover {
-  color: #ff7e5f;
-}
-h4:hover {
-  color: #ff7e5f;
+    color:#ff9800
 }
 
-
-@media (max-width: 900px) {
-    body {
-        margin: 10px;
-        padding: 10px;
-        font-size: 18px;
-    }
-    main, a {
-        font-size: 22px;
-        padding: 10px;
-        display: flex;
-    }
-    a {
-        padding: 10px;
-    }
-    header {
-        padding: 5px;
+@media (max-width: 800px) {
+    main {
+        max-width: 98vw;
+        padding: 18px 6vw 16px 6vw;
     }
     .footer-content {
         flex-direction: column;
-        align-items: stretch;
-        max-width: 100%;
-    }
-}
-@media (max-width: 600px) {
-    body {
-        margin: 2vw;
-        padding: 2vw;
-        font-size: 16px;
-    }
-    main, a {
-        font-size: 16px;
-        padding: 5px;
-        display: flex;
-    }
-    a {
-        padding: 5px;
-    }
-    ul, ol {
-        width: 100%;
-        padding: 0;
-        margin: 0 auto;
-        display: block;
-        text-align: left;
-    }
-    li {
-        display: block;
-        margin: 8px 0;
-         font-size: 15px;
-    }
-    .footer-section {
-        min-width: unset;
-        margin: 10px 0;
-    }
-    .footer-content a{
-        padding: 0 5px;
-        display: inline;
+        gap: 18px;
+        padding: 0 18px;
     }
 }

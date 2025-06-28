@@ -1,70 +1,87 @@
 <!DOCTYPE html>
 <html lang="fr">
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scalesgt=1.0">
-        <title>SITE WEB</title>
-        <link rel="stylesheet" href="aide.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    </head>
-    <body>
-        <main>
-            <a href="accueil.html">accueil</a>
-            <a href="produit.html">produit</a>
-            <a href="contact.html">contact</a>
-        </main>
-        <header>
-            <div class="aide"> 
-             <strong><h1>Aide</h1></strong></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITE WEB - Aide</title>
+    <link rel="stylesheet" href="aide.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="accueil.html">Accueil</a>
+        <a href="produit.html">Produit</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <section class="aide-header">
+            <h1><i class="fa-solid fa-circle-question"></i> Aide</h1>
+        </section>
+        <section class="faq">
+            <h2>Questions fréquemment posées</h2>
+            <ul>
+                <li><strong>Comment passer une commande ?</strong> Suivez notre guide d'achat.</li>
+                <li><strong>Quels sont les modes de paiements ?</strong> Nous acceptons <span class="pay">Orange Money</span>, <span class="pay">M-Pesa</span> et <span class="pay">Airtel Money</span>.</li>
+                <li><strong>Comment retourner un produit ?</strong> Consultez notre politique de retour.</li>
+            </ul>
+        </section>
+        <section class="guide">
+            <h2>Guide d'achat</h2>
+            <ol>
+                <li><strong>Comment commander ou acheter ?</strong></li>
+            </ol>
+            <p>Pour commander, c'est simple :</p>
+            <ul>
+                <li>Sélectionnez un produit.</li>
+                <li>Ajoutez-le à votre panier.</li>
+                <li>Validez votre commande.</li>
+            </ul>
+        </section>
+        <section class="retour">
+            <h2>Politique de retour</h2>
+            <p>
+                Vous avez <strong>deux semaines</strong> pour retourner un produit, à condition qu'il soit dans son état d'origine.<br>
+                <span class="note">NB : Retour accepté uniquement si le produit est en mauvais état.</span>
+            </p>
+        </section>
+        <section class="livraison">
+            <h2>Information sur la livraison</h2>
+            <p>
+                Nous offrons une <strong>livraison à domicile</strong> et <strong>express</strong>.<br>
+                Les frais de livraison varient en fonction de votre localisation.
+            </p>
+        </section>
+        <section class="contact-aide">
+            <h2>Contactez-nous</h2>
+            <p>
+                Pour toutes vos questions, contactez-nous au <a href="https://wa.me/243999955270" target="_blank" class="whatsapp-link"><i class="fab fa-whatsapp"></i> +243 999 955 270</a>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Suivez-nous</h4>
+                <a href="https://www.tiktok.com/@christ_kas273?_t=ZM-BuxOuG3b2E&" class="social-icon" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+                <a href="https://wa.me/243999955270" class="social-icon" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="https://www.instagram.com/Christ_Kas_273?igsh=MzR1ODBiNWF1ZA==" class="social-icon" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.facebook.com/Share/&1BncgMHJgQ/?mibextid==wwXIFR" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
             </div>
-            <div class="menu">
-                <h2> <strong>Question fréquentement posées</strong></h2>
-                <ul><li><strong>Comment passer une commande?</strong>Suivez notre guide d'achat.</li>
-                     <li><strong>Quels sont les modes de paeiments?</strong>Nous acceptons <br> orange-money, m-pesa et airtel money.</li>
-                     <li><strong>Comment retourner un produit?</strong>Consultez notre politique de retour.</li>
-                </ul>
-                <h2><strong>Guide d'achat</strong></h2>
-                <ol>
-                    <li><strong>Comment commander ou acheter</strong></li>
-                    <p><strong>pour commander c'est simple:</strong></p>
-                    <ul><li> <strong>Sélectionnez un produit.</strong></li>
-                        <li> <strong>Ajoutez-le à votre panier.</strong></li>
-                        <li><strong>Validez votre commande.</strong></li>
-                    </ul>
-                </ol>
-                <h2><strong>Politique de retour</strong></h2>
-                <p><strong>Vous avez deux semaines pour retourner un produit, <br>à condition qu'il soit dans son état d'origine <br>NB: Si est seulement le produit est en mauvais état</strong></p>
-                <h2><strong>Information sur la livraison</strong></h2>
-                <p><strong>Nous offrons une livraison à domicile et express. <br>Les frais de livraisons varient en fonction de l'endroit ou vous habitez</strong></p>
-                <h2><strong>Contacter-nous</strong></h2>
-                <p> <strong>Pour toute vos questions veuillez contactez le +243999955270</strong></p>
+            <div class="footer-section">
+                <h4>Contactez-nous</h4>
+                <p>Email : <a href="mailto:christkasongo8@gmail.com">christkasongo8@gmail.com</a></p>
+                <p>Téléphone : +243 999 955 270</p>
             </div>
-        </header>
-           <footer>
-      <div class="footer-content">
-       <div class="footer-section">
-          <h4>Suivez-nous</h4>
-          <a href="https://www.tiktok.com/@christ_kas273?_t=ZM-BuxOuG3b2E&"class="social-icon" target="_blank"><i class="fab fa-tiktok"></i>tiktok</a>
-          <a href="https://wa.me/+243999955270"class="social-icon" target="_blank"><i class="fab fa-whatsapp"></i>WhatsApp</a>
-          <a href="https://www.instagram.com/Christ_Kas_273?igsh=MzR1ODBiNWF1ZA== "class="social-icon"target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
-          <a href="https://www.facebook.com/Share/&1BncgMHJgQ/?mibextid==wwXIFR"class="social-icon"target=_blank><i class="fab fa-facebook-f"></i>Facebook</a>
-       </div>
-       <div class="footer-section">
-         <h4>Contactez-nous</h4>
-         <p>Email : <a href="mailto:tonemail@email.com">christkasongo8@gmail.com</a></p>
-         <p>Téléphone : +243 999 955 270</p>
-       </div>
-       <div class="footer-section">
-         <p>&copy; 2025 KACH. Tous droits réservés.</p>
-         <div class="footer-links">
-           <a href="accueil.html">Accueil</a> |
-           <a href="aide.html">Aide</a> |
-           <a href="contact.html">Contact</a>|
-           <a href="produit.html">produit</a>|
-         </div>
-       </div>
-     </div>
-   </footer>
-    </body>
+            <div class="footer-section">
+                <p>&copy; 2025 KACH. Tous droits réservés.</p>
+                <div class="footer-links">
+                    <a href="accueil.html">Accueil</a> |
+                    <a href="aide.html">Aide</a> |
+                    <a href="contact.html">Contact</a> |
+                    <a href="produit.html">Produit</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
