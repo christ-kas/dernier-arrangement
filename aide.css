@@ -1,32 +1,37 @@
-body{
-    background: url(IMG_1295[1].JPG) no-repeat center center fixed;
-    background-size: cover;
-    margin: 60px;
-    padding: 80px;
-    font-family: arial, sans-serif;
-    flex-direction: column;
-    text-align: center;
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
 }
-html, body {
-    height: 100%;
-    min-height: 100%;
+body{
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    font-family: 50px;
+    justify-content: center;
+    flex-direction: column;
 }
 main, a{
     text-decoration: none;
     color: white;
     font-size: 30px;
 }
-a{
-    padding: 20px;
+main{
+    padding: 10px;
+    display: flex;
 }
-main,a:hover{
-    color: #ff7e5f;
+a{
+    padding: 10px;
 }
 header{
     text-align: center; 
     border: white;
-    padding: 10 px;
-    border: 1px solid;
+    padding: 200px;
+    margin: 100px;
+    border: 5px solid;
+}
+header,p,h2,li{
+    color: white;
+    font-size: 20px;
+
 }
 .ul, ol{
     text-align: center;
@@ -46,25 +51,34 @@ P,h2,h1{
     color: white;
 }
 a:hover{
-    color: #ff7e5f;
-}
-.footer {
-  background: white;
-  color: #fff;
-  width: 100%;
+    color: rgb(248, 61, 14)
 }
 .footer-content {
   text-align: center;
+  backdrop-filter: blur(80px);
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
 }
+
+.footer-section {
+  margin: 10px 20px;
+  min-width: 200px;
+}
+
 .footer-links a {
   color: white;
   text-decoration: none;
+  margin: 0 10px;
 }
+
 .footer-links a:hover {
   text-decoration: underline;
 }
+
 .social-icon {
   font-size: 20px;
+  margin: 0 8px;
   text-decoration: none;
   transition: color 0.2s;
 }
@@ -72,6 +86,7 @@ a:hover{
   color: #fff;
 }
 .footer-section h4 {
+  margin-bottom: 8px;
   color:white;
   font-size: 20px;
 }
@@ -86,7 +101,6 @@ a:hover{
 }
 .footer-section p {
   color: white;
-  font-size: 20px;
 }
 .footer-section p:hover {
   color: #ff7e5f;
@@ -94,6 +108,7 @@ a:hover{
 h4:hover {
   color: #ff7e5f;
 }
+
 
 @media (max-width: 900px) {
     body {

@@ -38,7 +38,7 @@ main{
     padding-top: 5px;
 }
 #catégorie{
-    display: inline;
+    display: inline-block;
 }
 .commentaire{
     display: flex;
@@ -128,4 +128,17 @@ main{
 }
 h4:hover {
   color: #ff7e5f;
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+  header {
+    font-size: 16px;
+    padding: 5px 0;
+  }
+  #liste {
+    margin-left: 10%;
+    padding-top: 0.5rem;
+  }
 }
