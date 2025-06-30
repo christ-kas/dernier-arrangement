@@ -23,7 +23,8 @@
                 <div class="prix">35$</div>
                 <button type="button" class="acheter"
                    data-img= https://i.imgur.com/U6lnChC.jpeg?s=wa
-                   data-prix="35$">Acheter
+                   data-prix="35$"
+                   data-nom="veste">Acheter
                </button>
            </div>
            <div class="commentaire">
@@ -31,7 +32,8 @@
                 <div class="prix">35$</div>
                 <button type="button" class="acheter"
                    data-img= https://i.imgur.com/hw4nlLE.jpeg?s=wa
-                   data-prix="35$">Acheter
+                   data-prix="35$"
+                   data-nom="veste">Acheter
                </button>
             </div>
             <div class="commentaire">
@@ -39,7 +41,8 @@
                 <div class="prix">35$</div>
                 <button type="button" class="acheter"
                    data-img=https://i.imgur.com/yhskcBO.jpeg?s=wa
-                   data-prix="35$">Acheter
+                   data-prix="35$"
+                   data-nom="veste">Acheter
                </button>
             </div>
             <div class="commentaire">
@@ -47,15 +50,17 @@
                 <div class="prix">35$</div> 
                 <button type="button" class="acheter"
                    data-img=https://i.imgur.com/pEpxso1.jpeg?s=wa
-                   data-prix="35$">Acheter
+                   data-prix="35$"
+                   data-nom="veste">Acheter
                </button>
             </div>
             <div class="commentaire">
                 <img src="image copy 45.png" alt="T-shrit" width="250px">
                 <div class="prix">35$</div>
                 <button type="button" class="acheter"
-                   data-img=
-                   data-prix="35$">Acheter
+                   data-img=https://i.imgur.com/pEpxso1.jpeg?s=wa
+                   data-prix="35$"
+                   data-nom="veste">Acheter
                </button>
             </div>
             <div class="commentaire">
@@ -63,7 +68,8 @@
                 <div class="prix">35$</div>
                 <button type="button" class="acheter"
                    data-img=https://i.imgur.com/PaYWwrv.jpeg?s=wa
-                   data-prix="35$">Acheter
+                   data-prix="35$"
+                    data-nom="veste">Acheter
                </button>
             </div>
             <div class="commentaire">
@@ -71,7 +77,8 @@
                 <div class="prix">35$</div>
                 <button type="button" class="acheter"
                    data-img=https://i.imgur.com/eivDG6Z.jpeg?s=wa
-                   data-prix="35$">Acheter
+                   data-prix="35$"
+                   data-nom="veste">Acheter
                </button>
             </div>
             <div class="commentaire">
@@ -79,7 +86,8 @@
                 <div class="prix">35$</div>
                 <button type="button" class="acheter"
                    data-img=https://i.imgur.com/9apxrVf.jpeg?s=wa
-                   data-prix="35$">Acheter
+                   data-prix="35$"
+                   data-nom="veste">Acheter
                </button>
         </div>
   </header>
@@ -100,7 +108,7 @@
        <div class="footer-section">
          <p>&copy; 2025 KACH. Tous droits réservés.</p>
          <div class="footer-links">
-           <a href="accueil.html">Accueil</a> |
+           <a href="index.html">Accueil</a> |
            <a href="aide.html">Aide</a> |
            <a href="contact.html">Contact</a>|
            <a href="produit.html">produit</a>|
@@ -113,8 +121,9 @@ document.querySelectorAll('.acheter').forEach(function(btn) {
   btn.addEventListener('click', function() {
     var img = btn.getAttribute('data-img');
     var prix = btn.getAttribute('data-prix');
+    var nom = btn.getAttribute('data-nom');
     var message = encodeURIComponent(
-      "Bonjour, je souhaite acheter ce produit :\nImage : " + img + "\nPrix : " + prix
+      "Bonjour, je souhaite acheter ce produit :\nImage : " + img + "\nPrix : " + prix + "\nnom :" + nom + "\n\nMerci !"
     );
     var url = "https://wa.me/243999955270?text=" + message;
     window.open(url, '_blank');

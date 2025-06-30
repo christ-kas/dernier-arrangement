@@ -22,56 +22,63 @@
                 <img src="image copy 23.png" alt="T-shrit" width="250px">
                 <div class="prix">20$</div>
                 <button type="button" class="acheter"
-                   data-img= https://i.imgur.com/2r5CFjI.jpeg?s=wa
-                   data-prix="20$">Acheter
+                   data-img= https://i.imgur.com/dfF8lsK.jpeg?s=wa
+                   data-prix="20$"
+                   data-nom="T-shirt">Acheter
                </button>
            </div>
            <div class="commentaire">
                 <img src="image copy 22.png" alt="T-shrit" width="250px">
                 <div class="prix">22$</div>
                 <button type="button" class="acheter"
-                   data-img= https://i.imgur.com/dfF8lsK.jpeg?s=wa
-                   data-prix="22$">Acheter
+                   data-img= https://i.imgur.com/1Isi5Al.jpeg?s=wa
+                   data-prix="22$"
+                   data-nom="T-shirt">Acheter
                </button>
            </div>
            <div class="commentaire">
                 <img src="image copy 25.png" alt="T-shrit" width="250px">
                 <div class="prix">18$</div>
                 <button type="button" class="acheter"
-                   data-img= https://i.imgur.com/1Isi5Al.jpeg?s=wa
-                   data-prix="25$">Acheter
+                   data-img= https://i.imgur.com/KYVGU6i.jpeg?s=wa
+                   data-prix="25$"
+                   data-nom="T-shirt">Acheter
                </button>
            </div>
            <div class="commentaire">
                 <img src="image copy 24.png" alt="T-shrit" width="250px">
                 <div class="prix">20$</div>
                 <button type="button" class="acheter"
-                   data-img= https://i.imgur.com/KYVGU6i.jpeg?s=wa
-                   data-prix="20$">Acheter
+                   data-img= https://i.imgur.com/aXFuOzU.jpeg?s=wa
+                   data-prix="20$"
+                   data-nom="T-shirt">Acheter
                </button>
            </div>
            <div class="commentaire">
                 <img src="image copy 26.png" alt="T-shrit" width="250px">
                 <div class="prix">20$</div>
                 <button type="button" class="acheter"
-                   data-img= https://i.imgur.com/aXFuOzU.jpeg?s=wa
-                   data-prix="20$">Acheter
+                   data-img=  https://i.imgur.com/wlhDMw2.jpeg?s=wa
+                   data-prix="20$"
+                   data-nom="T-shirt">Acheter"
                </button>
            </div>
            <div class="commentaire">
                 <img src="image copy 28.png" alt="T-shrit" width="250px">
                 <div class="prix">25$</div>
                 <button type="button" class="acheter"
-                   data-img= https://i.imgur.com/wlhDMw2.jpeg?s=wa
-                   data-prix="25$">Acheter
+                   data-img= https://i.imgur.com/Ub6SQOz.jpeg?s=wa
+                   data-prix="25$"
+                   data-nom="T-shirt">Acheter
                </button>
            </div>
            <div class="commentaire">
                 <img src="image copy 4.png" alt="T-shrit" width="250px">
                 <div class="prix">19$</div>
                 <button type="button" class="acheter"
-                   data-img= https://i.imgur.com/Ub6SQOz.jpeg?s=wa
-                   data-prix="19$">Acheter
+                   data-img= https://i.imgur.com/2r5CFjI.jpeg?s=wa
+                   data-prix="19$"
+                   data-nom="T-shirt">Acheter
                </button>
            </div>
            <div class="commentaire">
@@ -79,7 +86,8 @@
                 <div class="prix">20$</div>
                 <button type="button" class="acheter"
                    data-img=https://i.imgur.com/D4BGnDw.jpeg?s=wa
-                   data-prix="20$">Acheter
+                   data-prix="20$"
+                   data-nom="T-shirt">Acheter
                </button>
            </div>
        </div>
@@ -101,7 +109,7 @@
        <div class="footer-section">
          <p>&copy; 2025 KACH. Tous droits réservés.</p>
          <div class="footer-links">
-           <a href="accueil.html">Accueil</a> |
+           <a href="index.html">Accueil</a> |
            <a href="aide.html">Aide</a> |
            <a href="contact.html">Contact</a>|
            <a href="produit.html">produit</a>|
@@ -114,8 +122,9 @@ document.querySelectorAll('.acheter').forEach(function(btn) {
   btn.addEventListener('click', function() {
     var img = btn.getAttribute('data-img');
     var prix = btn.getAttribute('data-prix');
+    var nom = btn.getAttribute('data-nom');
     var message = encodeURIComponent(
-      "Bonjour, je souhaite acheter ce produit :\nImage : " + img + "\nPrix : " + prix
+    "Bonjour, je souhaite acheter ce produit :\nImage : " + img + "\nPrix : " + prix + "\nnom :" + nom + "\n\nMerci !"
     );
     var url = "https://wa.me/243999955270?text=" + message;
     window.open(url, '_blank');

@@ -23,7 +23,8 @@
                 <div class="prix">20$</div>
                 <button type="button" class="acheter"
                    data-img= https://i.imgur.com/rKI881V.jpeg?s=wa
-                   data-prix="20$">Acheter
+                   data-prix="20$"
+                   data-nom="robe">Acheter
                </button>
            </div>
            <div class="commentaire">
@@ -31,7 +32,8 @@
                 <div class="prix">30$</div>
                 <button type="button" class="acheter"
                    data-img= https://i.imgur.com/9Uc89ei.jpeg?s=wa
-                   data-prix="30$">Acheter
+                   data-prix="30$"
+                   data-nom="robe">Acheter
                </button>
            </div>
            <div class="commentaire">
@@ -39,7 +41,8 @@
                 <div class="prix">28$</div>
                 <button type="button" class="acheter"
                    data-img= https://i.imgur.com/FabSaMm.jpeg?s=wa
-                   data-prix="28$">Acheter
+                   data-prix="28$"
+                   data-nom="robe">Acheter
                </button>
            </div>
            <div class="commentaire">
@@ -47,7 +50,8 @@
                 <div class="prix">25$</div>
                 <button type="button" class="acheter"
                    data-img= https://i.imgur.com/kpdOHZT.jpeg?s=wa
-                   data-prix="25$">Acheter
+                   data-prix="25$"
+                   data-nom="robe">Acheter
                </button>
            </div>
            <div class="commentaire">
@@ -55,7 +59,8 @@
                 <div class="prix">20$</div>
                 <button type="button" class="acheter"
                    data-img= https://i.imgur.com/euvHnlM.jpeg?s=wa
-                   data-prix="20$">Acheter
+                   data-prix="20$"
+                   data-nom="robe">Acheter
                </button>
            </div>
            <div class="commentaire">
@@ -63,7 +68,8 @@
                 <div class="prix">18$</div>
                 <button type="button" class="acheter"
                    data-img= https://i.imgur.com/qLJyIm8.jpeg?s=wa
-                   data-prix="18$">Acheter
+                   data-prix="18$"
+                   data-nom="robe">Acheter
                </button>
            </div>
            <div class="commentaire">
@@ -71,7 +77,8 @@
                 <div class="prix">25$</div>
                 <button type="button" class="acheter"
                    data-img= https://i.imgur.com/ZB7HBRJ.jpeg?s=wa
-                   data-prix="25$">Acheter
+                   data-prix="25$"
+                   data-nom="robe">Acheter
                </button>
            </div>
            <div class="commentaire">
@@ -79,7 +86,8 @@
                 <div class="prix">20$</div>
                 <button type="button" class="acheter"
                    data-img=https://i.imgur.com/9j91BRE.jpeg?s=wa
-                   data-prix="20$">Acheter
+                   data-prix="20$"
+                   data-nom="robe">Acheter
                </button>
            </div>
         </div>
@@ -101,7 +109,7 @@
        <div class="footer-section">
          <p>&copy; 2025 KACH. Tous droits réservés.</p>
          <div class="footer-links">
-           <a href="accueil.html">Accueil</a> |
+           <a href="index.html">Accueil</a> |
            <a href="aide.html">Aide</a> |
            <a href="contact.html">Contact</a>|
            <a href="produit.html">produit</a>|
@@ -114,8 +122,9 @@ document.querySelectorAll('.acheter').forEach(function(btn) {
   btn.addEventListener('click', function() {
     var img = btn.getAttribute('data-img');
     var prix = btn.getAttribute('data-prix');
+    var nom = btn.getAttribute('data-nom');
     var message = encodeURIComponent(
-      "Bonjour, je souhaite acheter ce produit :\nImage : " + img + "\nPrix : " + prix
+      "Bonjour, je souhaite acheter ce produit :\nImage : " + img + "\nPrix : " + prix + "\nnom :" + nom + "\n\nMerci !"
     );
     var url = "https://wa.me/243999955270?text=" + message;
     window.open(url, '_blank');
