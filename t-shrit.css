@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background:linear-gradient(to right, #ff7e5f, #feb47b);
+    background: blue
     background-size: cover;
 }
 
@@ -52,9 +52,9 @@ body{
 }
 .tout{
     display: flex;
-    gap: 30px;           /* espace entre les produits */
+    gap: 30px;           
     justify-content: center;
-    flex-wrap: wrap;     /* pour passer à la ligne sur petit écran */
+    flex-wrap: wrap;     
 }
 .description p {
     font-size: 30px;

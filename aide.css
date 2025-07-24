@@ -53,7 +53,7 @@ main {
 .faq li, .guide li {
     margin-bottom: 8px;
 }
-.pay {
+.payer {
     color: #009688;
     font-weight: bold;
 }
@@ -104,7 +104,7 @@ footer {
     margin-top: 10px;
     font-size: 1em;
 }
-.footer-section p:hover {
+.footer-section p:hover, .footer-content h4:hover {
     color:#ff9800
 }
 

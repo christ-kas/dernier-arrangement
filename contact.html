@@ -54,12 +54,12 @@
         var message = document.querySelector('textarea[name="message"]').value.trim();
         var email = document.querySelector('input[name="email"]').value.trim();
         var telephone = document.querySelector('input[name="telephone"]').value.trim();
-        var numero = "243999955270"; // Sans le "+"
+        var numero = "243999955270"; 
         var texte = encodeURIComponent(
-          "🛒 Nouvelle demande de produit !\n\n" +
-          "🔹 Détail : " + message + "\n" +
-          "📧 Email : " + email + "\n" +
-          "📞 Téléphone : " + telephone
+          " Nouvelle demande de produit !\n\n" +
+          " Détail : " + message + "\n" +
+          " Email : " + email + "\n" +
+          " Téléphone : " + telephone
         );
         var url = "https://wa.me/" + numero + "?text=" + texte;
         window.open(url, '_blank');

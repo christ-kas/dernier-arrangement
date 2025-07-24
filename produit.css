@@ -60,7 +60,7 @@ main{
     color: white;
 }
 .commentaire img{
-    margin: 1rem;
+    margin: 1px;
     width: 400px;
     height: 500px;
     box-shadow: 100px;

@@ -1,15 +1,11 @@
 # KACH
-Bienvenue dans notre sur **KACH**.
+Bienvenue dans notre sur **KACH**, votre boutique en ligne et reponsive.
 Ce site est conçu pour offrir une expérience d'achat en ligne fluide et sécurisée.
-
-## A propos
-Notre site e-commerce permet aux utilisateurs d'acheter des articles.
-Nous nous engageons à fournir des produits de qualité, un service client exceptionelpour tous nos clients 
 
 ## Fonctionnalités
 - Catalogues produits
 - Acheter
-- Inscription et connexion du client
+- Inscription et connexion du client ou pas
 - Message par whatsApp pour l'admin et le client
 - Interface adaptée deskop et mobile
 
@@ -27,13 +23,15 @@ Nous nous engageons à fournir des produits de qualité, un service client excep
 - `jean.html`: catégorie jean
 - `short-chemise.html`: catégorie short-chemise
 
-## Langages utilisés
+## Langages et utils utilisés
 - HTML
 - CSS
 - JavaScript
+- github
+- visual studio code
 
 ## Utilisation
-- Inscivez-vous pour acheter des produits
+- Inscivez-vous pour acheter des produits ou pas
 - Appuyer sur acheter pour valider la commande
 - Recevez un message de l'admin pour connaitre le mode de paiement et de  livraison
 
